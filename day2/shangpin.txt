@@ -1,0 +1,4 @@
+python:500
+iphone:1000
+mac:45665
+kk:40000
