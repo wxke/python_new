@@ -1,0 +1,37 @@
+a {
+            text-decoration: none;
+            color: black;
+        }
+
+
+.select{
+  float: left;
+  display: inline;
+  width: 562px;
+  height: 28px;
+  border: 1px solid #ccc;//设置边框
+  background-color: #f2f2f5;
+  margin: 20px 0;
+
+}
+.select_text{
+  width: 80%;
+  float: left;
+  display: inline;
+  height: 22px;
+  /*line-height: 28px \9;*/
+
+
+}
+.select-sub{
+  width: 18.5%;
+  height: 28px;
+  float: right;
+  display: inline;
+
+}
+.shopping_guide {
+    background: #ff164a;
+    height: 40px;
+    width: 100%;
+}
