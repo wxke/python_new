@@ -1,0 +1,36 @@
+1538568781152	mozrunner::runner	INFO	Running command: "D:\\Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\wxk\\AppData\\Local\\Temp\\rust_mozprofile.iTjux0PmHvG1"
+1538568804200	mozrunner::runner	INFO	Running command: "D:\\Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\wxk\\AppData\\Local\\Temp\\rust_mozprofile.h4I8wh0QuZ7T"
+1538568806926	Marionette	INFO	Listening on port 12318
+1538568807419	Marionette	WARN	TLS certificate errors will be ignored for this session
+1538568807468	Marionette	DEBUG	[6442450945] Frame script loaded
+1538568807470	Marionette	DEBUG	[6442450945] Frame script registered
+[Parent 13412, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 13412, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 6808, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 12476, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 12476, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1538568845391	Marionette	INFO	Stopped listening on port 12318
+[GPU 10
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+4644b13.js, line 4: ReferenceError: c is not defined
+1538568844681	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for https://www.baidu.com/
+1538568844800	Marionette	DEBUG	[6442450945] Received DOM event pageshow for https://www.baidu.com/
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=p&json=1&p=3&sid=26524_1466_21093&req=2&csor=1&cb=jQuery11020914432062670212_1538568844499&_=1538568844501, line 1: TypeError: jQuery11020914432062670212_1538568844499 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=py&json=1&p=3&sid=26524_1466_21093&req=2&csor=2&pwd=p&cb=jQuery11020914432062670212_1538568844499&_=1538568844502, line 1: TypeError: jQuery11020914432062670212_1538568844499 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=pyt&json=1&p=3&sid=26524_1466_21093&req=2&csor=3&pwd=py&cb=jQuery11020914432062670212_1538568844499&_=1538568844503, line 1: TypeError: jQuery11020914432062670212_1538568844499 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=pyth&json=1&p=3&sid=26524_1466_21093&req=2&csor=4&pwd=pyt&cb=jQuery11020914432062670212_1538568844499&_=1538568844504, line 1: TypeError: jQuery11020914432062670212_1538568844499 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=pytho&json=1&p=3&sid=26524_1466_21093&req=2&csor=5&pwd=pyth&cb=jQuery11020914432062670212_1538568844499&_=1538568844505, line 1: TypeError: jQuery11020914432062670212_1538568844499 is not a function
+JavaScript error: https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=python&json=1&p=3&sid=26524_1466_21093&req=2&csor=6&pwd=pytho&cb=jQuery11020914432062670212_1538568844499&_=1538568844506, line 1: TypeError: jQuery11020914432062670212_1538568844499 is not a function
+1538568846254	Marionette	INFO	Stopped listening on port 12349
+[Parent 6612, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 6612, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 3320, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 3320, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[Parent 6612, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
