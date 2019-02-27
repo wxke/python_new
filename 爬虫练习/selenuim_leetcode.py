@@ -18,7 +18,7 @@ def login(url):
     time.sleep(2)
     button.click()
 def find_topic():
-    sum_page = 2
+    sum_page = 2  #到第几页为止
     count = 0
     for i in range(0,sum_page):
         div = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, '#question-app > div > div:nth-child(2) > div.question-list-base')))
