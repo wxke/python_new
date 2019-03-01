@@ -13,12 +13,12 @@ def login(url):
     input_user = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, '#app > div > div.sign-in-wrapper__2SAX > div > div.placeholder-bottom__2SYS > div > div > div > form > span:nth-child(1) > input')))
     input_password = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR,'#app > div > div.sign-in-wrapper__2SAX > div > div.placeholder-bottom__2SYS > div > div > div > form > span:nth-child(3) > input')))
     button = wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, '#app > div > div.sign-in-wrapper__2SAX > div > div.placeholder-bottom__2SYS > div > div > div > button')))
-    input_user.send_keys("你的账号")
-    input_password.send_keys("你的密码")
+    input_user.send_keys("账号")
+    input_password.send_keys("密码")
     time.sleep(2)
     button.click()
 def find_topic():
-    sum_page = 2
+    sum_page = 2  #到第几页为止
     count = 0
     for i in range(0,sum_page):
         div = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, '#question-app > div > div:nth-child(2) > div.question-list-base')))
@@ -41,20 +41,22 @@ def load(list1):
         name = './test-leetcode/' + i[0][0] + " " +i[0][2] + '.txt'
         url_code = str1 + i[0][1]+'/submissions/'
         code = find_code(url_code)
-        print(code)
+        # print(code)
         with open(name,'w',encoding='utf-8') as f:
             f.write(i[0][2] + '\n' + code)
 def find_code(url):
     browser.get(url)
     wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, '#question-detail-main-tabs > div.tab-pane__280T.css-xailxq-TabContent.e5i1odf5 > div > div')))
     time.sleep(2)
-    tbody = browser.find_element_by_class_name('submissions__23-1')
-    a_list = tbody.find_elements_by_tag_name('a')
-    for i in a_list:
-        te = i.get_attribute('innerHTML')
-        if i.get_attribute('text') == '通过':
-            res = i.get_attribute('href')
-            break
+    # tbody = browser.find_element_by_class_name('submissions__23-1')
+    a_list = wait.until(EC.presence_of_element_located((By.CLASS_NAME, 'ac__1l1V')))
+    # for i in a_list:
+    #     te = i.get_attribute('innerHTML')
+    #     if i.get_attribute('text') == '通过':
+    #         res = i.get_attribute('href')
+    #         break
+    res = a_list.get_attribute('href')
+    print(res)
     browser.get(res)
     cls = browser.find_elements_by_class_name("ace_line_group")
     code = ''
